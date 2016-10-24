@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		// pop 从后删除 //shift  从前删
+		var ar1=['我是POP','我是数组方法','昨天玩的不开心','蓝瘦香菇'];
+		var fg=ar1.pop();
+//		console.log(ar1);
+//		console.log(fg);//返回值是删除的元素；
+		// shift
+		var ar2=['昨天不开心了','跟朋友吵架了','lol坑我了'];
+		var ss=ar2.shift();
+//		console.log(ss);
+//		console.log(ar2);
+		ar2.push(fg);
+		ar1.unshift(ss);
+		console.log(ar1);
+		console.log(ar2);
+	</script>
+</html>

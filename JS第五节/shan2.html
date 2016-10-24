@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var arr=['北京的','冬天来了','要穿秋裤','不然','冻死了'];
+		//两个参数的时候 第一个参数是开始位置(包括自己)第二个参数(删除的长度)；
+//		arr.splice(2,1);//删除的位置是从本身开始的
+//		arr.splice(2,2);
+//		console.log(arr);
+		//三个参数第三个参数变成增加的元素了
+		
+//		arr.splice(2,1,'不穿裤子');// 用不穿裤子替换了要穿秋裤了
+//		arr[2]='不穿裤子';
+		arr.splice(2,0,'肾虚的','同学','一定要','注意了')// 参数可以写多个超过两个参数从第三个开始就变成你要添加的元素了
+		
+		console.log(arr);
+	</script>
+</html>

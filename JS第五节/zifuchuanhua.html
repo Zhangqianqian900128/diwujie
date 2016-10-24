@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;font-size: 65px;}
+		</style>
+	</head>
+	<body>
+		<div id="ds">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var ds=document.getElementById("ds");
+		var a=['你好啊','美女','约个时间白'];
+		var b=['我想请你','吃个饭','有时间吗'];
+		var c=a.concat(b);
+		// ds.innerHTML=a[0]+a[1]+a[2]+b[0]+b[1]+b[2];
+//		for (var i = 0; i < c.length; i++) {
+//			ds.innerHTML+=c[i];
+//		}
+//   join() 把数组转变成字符串他是默认以,的你要传一个''就变成了以完整的语句了；
+		var s=c.join('');
+		console.log(typeof(s));
+		console.log(s);
+		ds.innerHTML=s;
+		var nk=[2015,6,30];
+//		2015-6-30;
+		var km=nk.join(':');
+		ds.innerHTML+=km;
+	</script>
+</html>
